@@ -1,0 +1,30 @@
+Create database file:
+sqlite3 db/election.db
+* to view the database file: .database
+* to open it : .open db/election.db
+
+Create new table: (into this file schema.sql)
+CREATE TABLE candidates (
+  id INTEGER PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  industry_connected BOOLEAN NOT NULL
+);
+* In the terminal (not the SQLite CLI) to build the db on the schema: sqlite3 db/election.db < db/schema.sql
+* the seeds.sql file to populate the candidates table with data: sqlite3 db/election.db < db/seeds.sql
+* to see the table database: .schema
+
+Insert data into the tabel:
+INSERT INTO candidates (first_name, last_name, industry_connected)
+VALUES ('Ronald', 'Firbank', 1);
+* to view what you have inserted: SELECT * FROM candidates;
+* to show table headers: .headers on
+* to format the table for better display: .mode column
+* to get specific coloumns: SELECT first_name, last_name FROM candidates;
+
+
+
+
+
+
+
