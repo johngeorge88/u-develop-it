@@ -27,10 +27,6 @@ WHERE id = 3;
 * to delete: DELETE FROM candidates
 WHERE first_name = "Montague";
 
-In the package.json add this after the script test:
-"migrate": "sqlite3 db/election.db < db/schema.sql",
-"seed": "sqlite3 db/election.db < db/seeds.sql",
-"db": "sqlite3 db/election.db"
 
 
 
