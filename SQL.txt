@@ -1,3 +1,6 @@
+MySQL command line, type:
+mysql -u root -p
+
 Create database file:
 sqlite3 db/election.db
 * to view the database file: .database
